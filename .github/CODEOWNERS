@@ -1,3 +1,4 @@
 # Default reviewers for all files
 * @devopslabcun/devops-aks-Maintainers
 *.md @MariCarmenSaldivar
+test.py @xRegner
