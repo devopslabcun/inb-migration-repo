@@ -2,9 +2,16 @@ name: Build
 on:
   push:
     branches:
+      - merge_requests
       - development
+    paths:
+      - 'demo_1/**/*'
+      - '.github/workflows/build.yml'
   pull_request:
     types: [opened, synchronize, reopened]
+    paths:
+      - 'demo_1/**/*'
+      - '.github/workflows/build.yml'
 jobs:
   sonarqube:
     name: SonarQube
